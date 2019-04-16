@@ -14,7 +14,7 @@
     "@babel/runtime": "^7.0.0-beta.40",
     "archiver": "^2.1.1",
     "commander": "^2.14.1",
-    "dialogflow": "^0.1.0",
+    "dialogflow": "^0.8.2",
     "raw-body": "^2.3.2",
     "unzip": "^0.1.11"
   },
@@ -35,8 +35,7 @@
   },
   "scripts": {
     "fix-style": "prettier --write $npm_package_config_prettierFiles",
-    "check-style":
-      "prettier --list-different $npm_package_config_prettierFiles",
+    "check-style": "prettier --list-different $npm_package_config_prettierFiles",
     "lint": "eslint --ext .js src/",
     "build": "babel -d lib/ src/",
     "check-all": "yarn lint && yarn check-style",
